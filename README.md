@@ -4,7 +4,7 @@
 
 df
 
-|   | name | grade | hours | 
+| a | name | grade | hours | 
 | ------------- | ------------- |
 | 0  | A | 50 | 1 |
 | 1  | B | 60 | 2 |
