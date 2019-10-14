@@ -39,14 +39,6 @@ read specific column
 | 1  | B | 
 | 2  | C |
 
-# df.index = [2,3,4]
-set a new index list
-
-| | name | grade | hours | 
-| --- | --- |---|--- |
-| 2  | A | 50 | 1 |
-| 3  | B | 60 | 2 |
-| 4  | C | 90 | 7 |
 
 # df.set_index('name', inplace = True)
 set name column to index
@@ -57,3 +49,30 @@ set name column to index
 | A   | 50 | 1 |
 | B  | 60 | 2 |
 | C  | 90 | 7 |
+
+# df.reset_index(level=0, inplace = True)
+index to column
+
+| | name | grade | hours | 
+| --- | --- |---|--- |
+| 0  | A | 50 | 1 |
+| 1  | B | 60 | 2 |
+| 2  | C | 90 | 7 |
+
+# df.index = [2,3,4]
+set a new index list
+
+| | name | grade | hours | 
+| --- | --- |---|--- |
+| 2  | A | 50 | 1 |
+| 3  | B | 60 | 2 |
+| 4  | C | 90 | 7 |
+
+# df.reset_index(drop = True, inplace = True)
+index begins from 0
+
+| | name | grade | hours | 
+| --- | --- |---|--- |
+| 0  | A | 50 | 1 |
+| 1  | B | 60 | 2 |
+| 2  | C | 90 | 7 |
