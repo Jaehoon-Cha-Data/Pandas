@@ -37,12 +37,12 @@ df['name']
 # print name column
 
 ### set index ###
-df.index = [2,3,4]
-# index becomes [2,3,4]
 df.set_index('name', inplace = True)
 # set name column to index
 df.reset_index(level=0, inplace = True)
 # set index to column
+df.index = [2,3,4]
+# index becomes [2,3,4]
 df.reset_index(drop = True, inplace = True)
 # index begins from 0
 
