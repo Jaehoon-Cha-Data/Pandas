@@ -39,8 +39,7 @@ read specific column
 | 1  | B | 
 | 2  | C |
 
-
-
-| 0  | A | 
-| 1  | B | 
-| 2  | C |
+0    A
+1    B
+2    C
+Name: name, dtype: object
